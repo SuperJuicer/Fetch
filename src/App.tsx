@@ -1,24 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const items = [
+  {id: "100", listId: "2", name: "Soap"},
+  {id: "200", listId: "4", name: null},
+  {id: "500", listId: "1", name: "Toilet paper"}
+];
+
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Items grouped by listId and alphabetized by name</h1>
+      <ol>
+        {items.map(item => <li key={item.id}>Group {item.listId}: {item.name}</li>)}
+      </ol>
     </div>
   );
 }
