@@ -1,3 +1,21 @@
+## Supported Platforms
+
+- Windows 10
+
+I have not tested this app in other platforms.
+
+## Supported Browsers
+
+- [Google Chrome](https://www.google.com/chrome/?brand=CHBF&ds_kid=43700052784036214&utm_source=bing&utm_medium=cpc&utm_campaign=1008138%20%7C%20Chrome%20Win10%20%7C%20DR%20%7C%20ESS01%20%7C%20NA%20%7C%20US%20%7C%20en%20%7C%20Desk%20%7C%20Bing%20SEM%20%7C%20BKWS%20~%20Top%20KWDS%20-%20Exact%20-%20NEW&utm_term=google%20chrome&utm_content=Desk%20%7C%20BING%20SEM%20%7C%20BKWS%20%7C%20Exact%20~%20Google%20Chrome%20~%20Top%20KWDS&gclid=COHLldqe7usCFRG3fgodTtsFvw&gclsrc=ds)
+
+- [Edge](https://www.microsoft.com/edge/download)
+
+- [Firefox](https://www.mozilla.org/en-US/firefox/windows/) 
+
+I do not expect this app to work in Internet Explorer. I have not tested it in Legacy Edge. [Microsoft plans to discontinue support for IE and Legacy Edge in 2021.](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666). 
+
+<br>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
