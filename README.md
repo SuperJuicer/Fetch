@@ -12,7 +12,7 @@ I have not tested this app in other platforms.
 
 - [Firefox](https://www.mozilla.org/en-US/firefox/windows/) 
 
-I do not expect this app to work in Internet Explorer. I have not tested it in Legacy Edge. [Microsoft plans to discontinue support for IE and Legacy Edge in 2021.](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666). 
+I do not expect this app to work in Internet Explorer. I have not tested it in Legacy Edge. [Microsoft plans to discontinue support for IE and Legacy Edge in 2021.](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666)
 
 <br>
 
