@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 
+/*
+ * Class that renders the app.
+ */
 class App extends React.Component {
   state = {items: [], isFetching: true};
 
@@ -20,26 +23,24 @@ class App extends React.Component {
     if (this.state.items.length === 0) {
       let responseItems = await getItems() as { id: number, listId: number, name: string }[];
 
-      // Perform operations on our array of items
-      if (responseItems.length !== 0) {
+      // Make sure there are items to display.
+      if (responseItems && responseItems.length !== 0) {
 
-        // Remove nulls
+        // We don't want nulls.
+        // Remove 'Item' from name so we cast to number and sort like numbers.
+        // Then the item names will then display sorted as a user would expect.
         responseItems = responseItems.filter(x => x['name']);
 
-        // Remove string chars from name
         for (let i = 0; i < responseItems.length; ++i) {
           responseItems[i].name = responseItems[i].name.substring(5);
         }
 
-        // Allow name property to accept number type
         let itemsWithNameAsNumber = responseItems as unknown as { id: number, listId: number, name: number }[];
 
-        // Cast name from string to number so we can sort
         for (let i = 0; i < itemsWithNameAsNumber.length; ++i) {
           itemsWithNameAsNumber[i].name = Number(itemsWithNameAsNumber[i].name);
         }
 
-        // Sort by listId and by name
         itemsWithNameAsNumber.sort((x, y) => {
           if (x.listId < y.listId) return -1;
           if (y.listId < x.listId) return 1;
@@ -50,7 +51,6 @@ class App extends React.Component {
           return 0;
         });
 
-        // Finally, we can set our state!
         this.setState({items: itemsWithNameAsNumber});
       }
     }
