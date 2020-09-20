@@ -1,3 +1,7 @@
+# Fetch Me Some Data!
+
+- This app uses the fetch API to retrieve data from a remote site. The data is displayed as a list of items sorted first by List ID and then by name. Any items without a name are removed before displaying.
+
 ## Supported Platforms
 
 - Windows 10
