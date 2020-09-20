@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 /*
  * Class that renders the app.
@@ -16,7 +15,6 @@ class App extends React.Component {
     
       return fetch(`${proxyurl}${url}`)
         .then(response => response.json())
-        .then (response => {return response})
         .catch(() => console.log('Something went wrong :-('));
     }
 
